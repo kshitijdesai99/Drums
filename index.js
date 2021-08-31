@@ -32,6 +32,28 @@ buttonAnimation(buttonInnerHTML);
   i++;
 }
 
+
+var j = 0;
+while(j<document.querySelectorAll(".drum").length){
+
+  document.querySelectorAll(".drum")[i].addEventListener("touchstart", function(){
+  var buttonInnerHTML = this.innerHTML;
+  makeSound(buttonInnerHTML);
+  buttonAnimation(buttonInnerHTML);
+
+},false);
+
+
+
+
+
+  // var audio = new Audio("sounds/tom-1.mp3");
+  // audio.play();})
+  j++;
+}
+
+
+
 document.addEventListener("keydown",function(event){
 
   makeSound(event.key);
