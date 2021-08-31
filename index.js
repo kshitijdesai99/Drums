@@ -14,6 +14,13 @@ var buttonInnerHTML = this.innerHTML;
 makeSound(buttonInnerHTML);
 buttonAnimation(buttonInnerHTML);
 });
+  
+  document.querySelectorAll(".drum")[i].addEventListener("touchend", function(){
+  var buttonInnerHTML = this.innerHTML;
+  makeSound(buttonInnerHTML);
+  buttonAnimation(buttonInnerHTML);
+
+},false);
 
 
 
