@@ -4,6 +4,7 @@
 //   alert("I got clicked");
 // }
 
+// update
 var i = 0;
 while(i<document.querySelectorAll(".drum").length){
   document.querySelectorAll(".drum")[i].addEventListener("click", function(){
