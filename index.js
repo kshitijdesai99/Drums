@@ -14,14 +14,10 @@ var buttonInnerHTML = this.innerHTML;
 
 makeSound(buttonInnerHTML);
 buttonAnimation(buttonInnerHTML);
+
 });
   
-  document.querySelectorAll(".drum")[i].addEventListener("touchstart", function(){
-  var buttonInnerHTML = this.innerHTML;
-  makeSound(buttonInnerHTML);
-  buttonAnimation(buttonInnerHTML);
 
-},false);
 
 
 
@@ -40,6 +36,8 @@ while(j<document.querySelectorAll(".drum").length){
   var buttonInnerHTML = this.innerHTML;
   makeSound(buttonInnerHTML);
   buttonAnimation(buttonInnerHTML);
+  event.preventDefault();
+  return false;
 
 },false);
 
