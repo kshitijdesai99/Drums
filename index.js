@@ -6,14 +6,14 @@
 
 var i = 0;
 while(i<document.querySelectorAll(".drum").length){
-  document.querySelectorAll(".drum")[i].addEventListener("click", function(){
-  // console.log(this.innerHTML);
-  // this.style.color = "white";
-var buttonInnerHTML = this.innerHTML;
+//   document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+//   // console.log(this.innerHTML);
+//   // this.style.color = "white";
+// var buttonInnerHTML = this.innerHTML;
 
-makeSound(buttonInnerHTML);
-buttonAnimation(buttonInnerHTML);
-});
+// makeSound(buttonInnerHTML);
+// buttonAnimation(buttonInnerHTML);
+// });
   
   document.querySelectorAll(".drum")[i].addEventListener("touchend", function(){
   var buttonInnerHTML = this.innerHTML;
